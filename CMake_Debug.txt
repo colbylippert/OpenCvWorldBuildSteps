@@ -1,0 +1,567 @@
+C:\>"C:\Program Files\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat"
+**********************************************************************
+** Visual Studio 2022 Developer Command Prompt v17.10.5
+** Copyright (c) 2022 Microsoft Corporation
+**********************************************************************
+[vcvarsall.bat] Environment initialized for: 'x64'
+
+C:\>set "CUDNN_LIBRARY_DIR=C:\Program Files\NVIDIA\CUDNN\v9.2\lib\12.5\x64\cudnn.lib"
+
+C:\>set "CUDNN_INCLUDE_DIR=C:\Program Files\NVIDIA\CUDNN\v9.2\include\12.5"
+
+C:\>set "CUDA_TOOLKIT_DIR=C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5"
+
+C:\>set "GPU_CAPABILITY=8.6"
+
+C:\>set "CPU_BASELINE=AVX2"
+
+C:\>set "CPU_DISPATCH=AVX,FMA3,AVX2"
+
+C:\>set "MKL_DIR=C:\Program Files (x86)\Intel\oneAPI\mkl\2024.2"
+
+C:\>set "EIGEN_DIR=C:/src/eigen"
+
+C:\>set "NINJA_DIR=C:\src\ninja"
+
+C:\>set path=%NINJA_DIR%;%path%
+
+C:\>set "OPENCV_DIR=C:\src\opencv"
+
+C:\>set "OPENCV_MODULES_DIR=C:\src\opencv_contrib\modules"
+
+C:\>set "GENERATOR=Ninja"
+
+C:\>set "GSTREAMER_ROOT=C:\gstreamer\1.0\msvc_x86_64"
+
+C:\>set path=%GSTREAMER_ROOT%\bin;%GSTREAMER_ROOT%\lib;%path%
+
+C:\>set "OPENCV_BUILD_DIR=C:\src\OpenCvBuild\Debug"
+
+C:\>set "BUILD_TYPE=Debug"
+
+C:\>"C:\Program Files\CMake\bin\cmake.exe" ^
+More? -B"%OPENCV_BUILD_DIR%/" ^
+More? -H"%OPENCV_DIR%/" ^
+More? -G"%GENERATOR%" ^
+More? -DCMAKE_BUILD_TYPE=%BUILD_TYPE% ^
+More? -DOPENCV_EXTRA_MODULES_PATH="%OPENCV_MODULES_DIR%/" ^
+More? -DBUILD_opencv_world=ON ^
+More? -DOPENCV_ENABLE_NONFREE=ON ^
+More? -DCPU_BASELINE="%CPU_BASELINE%" ^
+More? -DCPU_DISPATCH="%CPU_DISPATCH%" ^
+More? -DENABLE_FAST_MATH=ON ^
+More? -DWITH_OPENMP=ON ^
+More? -DWITH_TBB=ON ^
+More? -DWITH_EIGEN=ON ^
+More? -DEIGEN_INCLUDE_PATH="%EIGEN_DIR%" ^
+More? -DWITH_LAPACK=ON ^
+More? -DLAPACK_IMPL=MKL ^
+More? -DMKL_ROOT_DIR="%MKL_DIR%" ^
+More? -DWITH_CUDA=ON ^
+More? -DCUDA_TOOLKIT_ROOT_DIR="%CUDA_TOOLKIT_DIR%" ^
+More? -DCUDA_FAST_MATH=ON ^
+More? -DCUDA_ARCH_BIN="%GPU_CAPABILITY%" ^
+More? -DWITH_CUBLAS=ON ^
+More? -DWITH_CUVID=ON ^
+More? -DWITH_NVCUVID=ON ^
+More? -DWITH_NVENC=ON ^
+More? -DHAVE_CUDA=ON ^
+More? -DWITH_CUDNN=ON ^
+More? -DOPENCV_DNN_CUDA=ON ^
+More? -DCUDNN_LIBRARY="%CUDNN_LIBRARY_DIR%" ^
+More? -DCUDNN_INCLUDE_DIR="%CUDNN_INCLUDE_DIR%" ^
+More? -DBUILD_opencv_cudacodec=ON ^
+More? -DWITH_FFMPEG=ON ^
+More? -DWITH_GSTREAMER=ON ^
+More? -DGSTREAMER_ROOT_DIR="%GSTREAMER_ROOT%" ^
+More? -DGSTREAMER_LIB_DIR="%GSTREAMER_ROOT%\lib" ^
+More? -DGSTREAMER_INCLUDE_DIR="%GSTREAMER_ROOT%\include" ^
+More? -DGSTREAMER_VERSION=1.0 ^
+More? -DWITH_OPENGL=ON ^
+More? -DWITH_MFX=ON ^
+More? -DWITH_GTK=ON
+CMake Warning (dev) at CMakeLists.txt:127 (enable_language):
+  project() should be called prior to this enable_language() call.
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- The CXX compiler identification is MSVC 19.40.33813.0
+-- The C compiler identification is MSVC 19.40.33813.0
+CMake Warning (dev) at C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake:539 (enable_language):
+  project() should be called prior to this enable_language() call.
+Call Stack (most recent call first):
+  C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake:509 (__windows_compiler_msvc_enable_rc)
+  C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-CXX.cmake:6 (__windows_compiler_msvc)
+  C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCXXInformation.cmake:48 (include)
+  CMakeLists.txt:127 (enable_language)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Detecting CXX compiler ABI info
+-- Detecting CXX compiler ABI info - done
+-- Check for working CXX compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting CXX compile features
+-- Detecting CXX compile features - done
+CMake Warning (dev) at C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake:539 (enable_language):
+  project() should be called prior to this enable_language() call.
+Call Stack (most recent call first):
+  C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC.cmake:509 (__windows_compiler_msvc_enable_rc)
+  C:/Program Files/CMake/share/cmake-3.30/Modules/Platform/Windows-MSVC-C.cmake:5 (__windows_compiler_msvc)
+  C:/Program Files/CMake/share/cmake-3.30/Modules/CMakeCInformation.cmake:48 (include)
+  CMakeLists.txt:127 (enable_language)
+This warning is for project developers.  Use -Wno-dev to suppress it.
+
+-- Detecting C compiler ABI info
+-- Detecting C compiler ABI info - done
+-- Check for working C compiler: C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe - skipped
+-- Detecting C compile features
+-- Detecting C compile features - done
+-- Detected processor: AMD64
+CMake Warning at cmake/OpenCVUtils.cmake:758 (message):
+  Unexpected option: WITH_GTK (=ON)
+
+  Condition: IF (UNIX;AND;NOT;APPLE;AND;NOT;ANDROID)
+Call Stack (most recent call first):
+  CMakeLists.txt:303 (OCV_OPTION)
+
+
+-- Could NOT find PythonInterp (missing: PYTHON_EXECUTABLE) (Required is at least version "3.2")
+-- Performing Test HAVE_CXX_FP:FAST
+-- Performing Test HAVE_CXX_FP:FAST - Success
+-- Performing Test HAVE_C_FP:FAST
+-- Performing Test HAVE_C_FP:FAST - Success
+-- Performing Test HAVE_CPU_SSE3_SUPPORT (check file: cmake/checks/cpu_sse3.cpp)
+-- Performing Test HAVE_CPU_SSE3_SUPPORT - Success
+-- Performing Test HAVE_CPU_SSSE3_SUPPORT (check file: cmake/checks/cpu_ssse3.cpp)
+-- Performing Test HAVE_CPU_SSSE3_SUPPORT - Success
+-- Performing Test HAVE_CPU_SSE4_1_SUPPORT (check file: cmake/checks/cpu_sse41.cpp)
+-- Performing Test HAVE_CPU_SSE4_1_SUPPORT - Success
+-- Performing Test HAVE_CPU_POPCNT_SUPPORT (check file: cmake/checks/cpu_popcnt.cpp)
+-- Performing Test HAVE_CPU_POPCNT_SUPPORT - Success
+-- Performing Test HAVE_CPU_SSE4_2_SUPPORT (check file: cmake/checks/cpu_sse42.cpp)
+-- Performing Test HAVE_CPU_SSE4_2_SUPPORT - Success
+-- Performing Test HAVE_CXX_ARCH:AVX (check file: cmake/checks/cpu_fp16.cpp)
+-- Performing Test HAVE_CXX_ARCH:AVX - Success
+-- Performing Test HAVE_CXX_ARCH:AVX2 (check file: cmake/checks/cpu_avx2.cpp)
+-- Performing Test HAVE_CXX_ARCH:AVX2 - Success
+-- Performing Test HAVE_CPU_BASELINE_FLAGS
+-- Performing Test HAVE_CPU_BASELINE_FLAGS - Success
+-- Performing Test HAVE_CXX_W15240
+-- Performing Test HAVE_CXX_W15240 - Success
+-- Performing Test HAVE_C_W15240
+-- Performing Test HAVE_C_W15240 - Success
+-- Looking for malloc.h
+-- Looking for malloc.h - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - found
+-- Found OpenMP_C: -openmp (found version "2.0")
+-- Found OpenMP_CXX: -openmp (found version "2.0")
+-- Found OpenMP: TRUE (found version "2.0")
+-- Looking for fseeko
+-- Looking for fseeko - not found
+-- Looking for sys/types.h
+-- Looking for sys/types.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for stddef.h
+-- Looking for stddef.h - found
+-- Check size of off64_t
+-- Check size of off64_t - failed
+-- libjpeg-turbo: VERSION = 3.0.3, BUILD = opencv-4.10.0-dev-libjpeg-turbo-debug
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Looking for include file intrin.h
+-- Looking for include file intrin.h - found
+-- Looking for a ASM_NASM compiler
+-- Looking for a ASM_NASM compiler - NOTFOUND
+-- SIMD extensions disabled: could not find NASM compiler.  Performance will suffer.
+-- Looking for assert.h
+-- Looking for assert.h - found
+-- Looking for fcntl.h
+-- Looking for fcntl.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for io.h
+-- Looking for io.h - found
+-- Looking for limits.h
+-- Looking for limits.h - found
+-- Looking for memory.h
+-- Looking for memory.h - found
+-- Looking for search.h
+-- Looking for search.h - found
+-- Looking for string.h
+-- Looking for string.h - found
+-- Performing Test C_HAS_inline
+-- Performing Test C_HAS_inline - Success
+-- Check size of signed short
+-- Check size of signed short - done
+-- Check size of unsigned short
+-- Check size of unsigned short - done
+-- Check size of signed int
+-- Check size of signed int - done
+-- Check size of unsigned int
+-- Check size of unsigned int - done
+-- Check size of signed long
+-- Check size of signed long - done
+-- Check size of unsigned long
+-- Check size of unsigned long - done
+-- Check size of signed long long
+-- Check size of signed long long - done
+-- Check size of unsigned long long
+-- Check size of unsigned long long - done
+-- Check size of unsigned char *
+-- Check size of unsigned char * - done
+-- Check size of size_t
+-- Check size of size_t - done
+-- Check size of ptrdiff_t
+-- Check size of ptrdiff_t - done
+-- Looking for memmove
+-- Looking for memmove - not found
+-- Looking for setmode
+-- Looking for setmode - found
+-- Looking for strcasecmp
+-- Looking for strcasecmp - not found
+-- Looking for strchr
+-- Looking for strchr - found
+-- Looking for strrchr
+-- Looking for strrchr - found
+-- Looking for strstr
+-- Looking for strstr - found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtol
+-- Looking for strtol - found
+-- Looking for strtoull
+-- Looking for strtoull - found
+-- Looking for lfind
+-- Looking for lfind - found
+-- Could NOT find OpenJPEG (minimal suitable version: 2.0, recommended version >= 2.3.1). OpenJPEG will be built from sources
+-- OpenJPEG: VERSION = 2.5.0, BUILD = opencv-4.10.0-dev-openjp2-2.5.0-debug
+-- Looking for stdlib.h
+-- Looking for stdlib.h - found
+-- Looking for stdio.h
+-- Looking for stdio.h - found
+-- Looking for math.h
+-- Looking for math.h - found
+-- Looking for float.h
+-- Looking for float.h - found
+-- Looking for time.h
+-- Looking for time.h - found
+-- Looking for stdarg.h
+-- Looking for stdarg.h - found
+-- Looking for ctype.h
+-- Looking for ctype.h - found
+-- Looking for stdint.h
+-- Looking for stdint.h - found
+-- Looking for inttypes.h
+-- Looking for inttypes.h - found
+-- Looking for strings.h
+-- Looking for strings.h - not found
+-- Looking for sys/stat.h
+-- Looking for sys/stat.h - found
+-- Looking for unistd.h
+-- Looking for unistd.h - not found
+-- Looking for include file malloc.h
+-- Looking for include file malloc.h - found
+-- Looking for _aligned_malloc
+-- Looking for _aligned_malloc - found
+-- Looking for posix_memalign
+-- Looking for posix_memalign - not found
+-- Looking for memalign
+-- Looking for memalign - not found
+-- OpenJPEG libraries will be built from sources: libopenjp2 (version "2.5.0")
+-- IPPICV: Downloading ippicv_2021.12.0_win_intel64_20240425_general.zip from https://raw.githubusercontent.com/opencv/opencv_3rdparty/7f55c0c26be418d494615afca15218566775c725/ippicv/ippicv_2021.12.0_win_intel64_20240425_general.zip
+-- found Intel IPP (ICV version): 2021.12.0 [2021.12.0]
+-- at: C:/src/OpenCvBuild/Debug/3rdparty/ippicv/ippicv_win/icv
+-- found Intel IPP Integration Wrappers sources: 2021.12.0
+-- at: C:/src/OpenCvBuild/Debug/3rdparty/ippicv/ippicv_win/iw
+-- Found CUDNN: C:/Program Files/NVIDIA/CUDNN/v9.2/lib/12.5/x64/cudnn.lib (found suitable version "9.2.1", minimum required is "7.5")
+-- NVCUVID: Header not found, WITH_NVCUVID requires Nvidia decoding library header C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include/nvcuvid.h
+-- NVCUVENC: Header not found, WITH_NVCUVENC requires Nvidia encoding library header C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5;C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/include/nvEncodeAPI.h
+-- CUDA detected: 12.5
+-- CUDA: Using CUDA_ARCH_BIN=8.6
+-- CUDA: NVCC target flags -gencode;arch=compute_86,code=sm_86;-D_FORCE_INLINES
+-- Check size of int
+-- Check size of int - done
+-- Found MKL 2024.0.2 at: C:\Program Files (x86)\Intel\oneAPI\mkl\2024.2
+-- LAPACK(MKL): LAPACK_LIBRARIES: C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_intel_lp64.lib;C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_sequential.lib;C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_core.lib
+-- LAPACK(MKL): Support is enabled.
+-- Could NOT find Java (missing: Java_JAVA_EXECUTABLE Java_JAR_EXECUTABLE Java_JAVAC_EXECUTABLE Java_JAVAH_EXECUTABLE Java_JAVADOC_EXECUTABLE)
+-- Could NOT find JNI (missing: JAVA_INCLUDE_PATH JAVA_INCLUDE_PATH2 AWT JVM)
+-- VTK is not found. Please set -DVTK_DIR in CMake to VTK build directory, or to VTK install subdirectory with VTKConfig.cmake file
+-- ADE: Downloading v0.1.2d.zip from https://github.com/opencv/ade/archive/v0.1.2d.zip
+-- FFMPEG: Downloading opencv_videoio_ffmpeg.dll from https://raw.githubusercontent.com/opencv/opencv_3rdparty/394dca6ceb3085c979415e6385996b6570e94153/ffmpeg/opencv_videoio_ffmpeg.dll
+-- FFMPEG: Downloading opencv_videoio_ffmpeg_64.dll from https://raw.githubusercontent.com/opencv/opencv_3rdparty/394dca6ceb3085c979415e6385996b6570e94153/ffmpeg/opencv_videoio_ffmpeg_64.dll
+-- FFMPEG: Downloading ffmpeg_version.cmake from https://raw.githubusercontent.com/opencv/opencv_3rdparty/394dca6ceb3085c979415e6385996b6570e94153/ffmpeg/ffmpeg_version.cmake
+-- Looking for mfapi.h
+-- Looking for mfapi.h - found
+-- Looking for vidcap.h
+-- Looking for vidcap.h - found
+-- Looking for d3d11_4.h
+-- Looking for d3d11_4.h - found
+-- freetype2:   NO
+-- harfbuzz:    NO
+-- Julia not found. Not compiling Julia Bindings.
+-- Module opencv_ovis disabled because OGRE3D was not found
+-- No preference for use of exported gflags CMake configuration set, and no hints for include/library directories provided. Defaulting to preferring an installed/exported gflags CMake configuration if available.
+-- Failed to find installed gflags CMake configuration, searching for gflags build directories exported with CMake.
+-- Failed to find gflags - Failed to find an installed/exported CMake configuration for gflags, will perform search for installed gflags components.
+-- Failed to find gflags - Could not find gflags include directory, set GFLAGS_INCLUDE_DIR to directory containing gflags/gflags.h
+-- Failed to find glog - Could not find glog include directory, set GLOG_INCLUDE_DIR to directory containing glog/logging.h
+-- Module opencv_sfm disabled because the following dependencies are not found: Glog/Gflags
+-- Tesseract:   NO
+-- Processing WORLD modules...
+--     module opencv_cudev...
+--     module opencv_core...
+-- Allocator metrics storage type: 'long long'
+-- Excluding from source files list: <BUILD>/modules/world/test/test_intrin128.avx512_skx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/test/test_intrin256.avx512_skx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/test/test_intrin256.lasx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/test/test_intrin512.avx512_skx.cpp
+--     module opencv_cudaarithm...
+--     module opencv_flann...
+--     module opencv_imgproc...
+--     module opencv_intensity_transform...
+--     module opencv_ml...
+--     module opencv_phase_unwrapping...
+--     module opencv_plot...
+--     module opencv_quality...
+--     module opencv_reg...
+--     module opencv_signal...
+--     module opencv_surface_matching...
+--     module opencv_alphamat...
+--     module opencv_cudafilters...
+--     module opencv_cudaimgproc...
+--     module opencv_cudawarping...
+--     module opencv_dnn...
+-- Registering hook 'INIT_MODULE_SOURCES_opencv_dnn': C:/src/opencv/modules/dnn/cmake/hooks/INIT_MODULE_SOURCES_opencv_dnn.cmake
+--     module opencv_dnn_superres...
+--     module opencv_features2d...
+--     module opencv_fuzzy...
+--     module opencv_hfs...
+--     module opencv_imgcodecs...
+-- imgcodecs: OpenEXR codec is disabled in runtime. Details: https://github.com/opencv/opencv/issues/21326
+--     module opencv_line_descriptor...
+--     module opencv_photo...
+--     module opencv_saliency...
+--     module opencv_text...
+--     module opencv_videoio...
+--     module opencv_xphoto...
+--     module opencv_calib3d...
+--     module opencv_cudacodec...
+CMake Warning at C:/src/opencv_contrib/modules/cudacodec/CMakeLists.txt:26 (message):
+  cudacodec::VideoReader requires Nvidia Video Codec SDK.  Please resolve
+  dependency or disable WITH_NVCUVID=OFF
+Call Stack (most recent call first):
+  modules/world/CMakeLists.txt:13 (include)
+  modules/world/CMakeLists.txt:50 (include_one_module)
+
+
+CMake Warning at C:/src/opencv_contrib/modules/cudacodec/CMakeLists.txt:30 (message):
+  cudacodec::VideoWriter requires Nvidia Video Codec SDK.  Please resolve
+  dependency or disable WITH_NVCUVENC=OFF
+Call Stack (most recent call first):
+  modules/world/CMakeLists.txt:13 (include)
+  modules/world/CMakeLists.txt:50 (include_one_module)
+
+
+--     module opencv_cudafeatures2d...
+--     module opencv_cudastereo...
+--     module opencv_datasets...
+--     module opencv_highgui...
+-- highgui: using builtin backend: WIN32UI
+--     module opencv_mcc...
+--     module opencv_objdetect...
+--     module opencv_rapid...
+--     module opencv_rgbd...
+--     module opencv_shape...
+--     module opencv_structured_light...
+--     module opencv_video...
+--     module opencv_wechat_qrcode...
+-- wechat_qrcode: Downloading detect.caffemodel from https://raw.githubusercontent.com/WeChatCV/opencv_3rdparty/a8b69ccc738421293254aec5ddb38bd523503252/detect.caffemodel
+-- wechat_qrcode: Downloading detect.prototxt from https://raw.githubusercontent.com/WeChatCV/opencv_3rdparty/a8b69ccc738421293254aec5ddb38bd523503252/detect.prototxt
+-- wechat_qrcode: Downloading sr.caffemodel from https://raw.githubusercontent.com/WeChatCV/opencv_3rdparty/a8b69ccc738421293254aec5ddb38bd523503252/sr.caffemodel
+-- wechat_qrcode: Downloading sr.prototxt from https://raw.githubusercontent.com/WeChatCV/opencv_3rdparty/a8b69ccc738421293254aec5ddb38bd523503252/sr.prototxt
+--     module opencv_xfeatures2d...
+-- xfeatures2d/boostdesc: Downloading boostdesc_bgm.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_bgm_bi.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_bi.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_bgm_hd.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_bgm_hd.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_binboost_064.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_064.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_binboost_128.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_128.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_binboost_256.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_binboost_256.i
+-- xfeatures2d/boostdesc: Downloading boostdesc_lbgm.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/34e4206aef44d50e6bbcd0ab06354b52e7466d26/boostdesc_lbgm.i
+-- xfeatures2d/vgg: Downloading vgg_generated_48.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_48.i
+-- xfeatures2d/vgg: Downloading vgg_generated_64.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_64.i
+-- xfeatures2d/vgg: Downloading vgg_generated_80.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_80.i
+-- xfeatures2d/vgg: Downloading vgg_generated_120.i from https://raw.githubusercontent.com/opencv/opencv_3rdparty/fccf7cd6a4b12079f73bbfb21745f9babcd4eb1d/vgg_generated_120.i
+--     module opencv_ximgproc...
+--     module opencv_xobjdetect...
+--     module opencv_aruco...
+--     module opencv_bgsegm...
+--     module opencv_bioinspired...
+--     module opencv_ccalib...
+--     module opencv_cudabgsegm...
+--     module opencv_cudalegacy...
+--     module opencv_cudaobjdetect...
+--     module opencv_dnn_objdetect...
+--     module opencv_dpm...
+--     module opencv_face...
+-- data: Downloading face_landmark_model.dat from https://raw.githubusercontent.com/opencv/opencv_3rdparty/8afa57abc8229d611c4937165d20e2a2d9fc5a12/face_landmark_model.dat
+--     module opencv_gapi...
+--     module opencv_optflow...
+--     module opencv_stitching...
+--     module opencv_tracking...
+--     module opencv_cudaoptflow...
+-- NVIDIA_OPTICAL_FLOW: Downloading edb50da3cf849840d680249aa6dbef248ebce2ca.zip from https://github.com/NVIDIA/NVIDIAOpticalFlowSDK/archive/edb50da3cf849840d680249aa6dbef248ebce2ca.zip
+-- Building with NVIDIA Optical Flow API 2.0
+--     module opencv_stereo...
+--     module opencv_superres...
+--     module opencv_videostab...
+-- Processing WORLD modules... DONE
+-- Excluding from source files list: modules/imgproc/src/imgwarp.lasx.cpp
+-- Excluding from source files list: modules/imgproc/src/resize.lasx.cpp
+-- Excluding from source files list: modules/dnn/src/layers/cpu_kernels/conv_winograd_f63.neon.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/layers_common.avx512_skx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/layers_common.rvv.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/layers_common.lasx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/int8layers/layers_common.avx512_skx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/int8layers/layers_common.rvv.cpp
+-- Excluding from source files list: <BUILD>/modules/world/int8layers/layers_common.lasx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/conv_block.neon.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/conv_block.neon_fp16.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/conv_depthwise.rvv.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/conv_depthwise.lasx.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/conv_winograd_f63.neon_fp16.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/fast_gemm_kernels.neon.cpp
+-- Excluding from source files list: <BUILD>/modules/world/layers/cpu_kernels/fast_gemm_kernels.lasx.cpp
+-- Found 'misc' Python modules from C:/src/opencv/modules/python/package/extra_modules
+-- Found 'mat_wrapper;utils' Python modules from C:/src/opencv/modules/core/misc/python/package
+-- Found 'gapi' Python modules from C:/src/opencv/modules/gapi/misc/python/package
+--
+-- General configuration for OpenCV 4.10.0-dev =====================================
+--   Version control:               4.10.0-163-g1ca526dcdb
+--
+--   Extra modules:
+--     Location (extra):            C:/src/opencv_contrib/modules
+--     Version control (extra):     4.10.0-11-g2413f864
+--
+--   Platform:
+--     Timestamp:                   2024-07-29T14:11:20Z
+--     Host:                        Windows 10.0.22631 AMD64
+--     CMake:                       3.30.1
+--     CMake generator:             Ninja
+--     CMake build tool:            C:/src/ninja/ninja.exe
+--     MSVC:                        1940
+--     Configuration:               Debug
+--     Algorithm Hint:              ALGO_HINT_ACCURATE
+--
+--   CPU/HW features:
+--     Baseline:                    SSE SSE2 SSE3 SSSE3 SSE4_1 POPCNT SSE4_2 FP16 FMA3 AVX AVX2
+--       requested:                 AVX2
+--     Dispatched code generation:
+--       requested:                 AVX FMA3 AVX2
+--
+--   C/C++:
+--     Built as dynamic libs?:      YES
+--     C++ standard:                11
+--     C++ Compiler:                C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe  (ver 19.40.33813.0)
+--     C++ flags (Release):         /DWIN32 /D_WINDOWS /W4 /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:fast /FS         /arch:AVX  /arch:AVX /arch:AVX2 /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 -openmp  /O2 /Ob2 /DNDEBUG
+--     C++ flags (Debug):           /DWIN32 /D_WINDOWS /W4 /GR  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:fast /FS         /arch:AVX  /arch:AVX /arch:AVX2 /EHa /wd4127 /wd4251 /wd4324 /wd4275 /wd4512 /wd4589 /wd4819 -openmp  /Zi /Ob0 /Od /RTC1
+--     C Compiler:                  C:/Program Files/Microsoft Visual Studio/2022/Community/VC/Tools/MSVC/14.40.33807/bin/Hostx64/x64/cl.exe
+--     C flags (Release):           /DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:fast /FS         /arch:AVX  /arch:AVX /arch:AVX2 -openmp   /O2 /Ob2 /DNDEBUG
+--     C flags (Debug):             /DWIN32 /D_WINDOWS /W3  /D _CRT_SECURE_NO_DEPRECATE /D _CRT_NONSTDC_NO_DEPRECATE /D _SCL_SECURE_NO_WARNINGS /Gy /bigobj /Oi  /fp:fast /FS         /arch:AVX  /arch:AVX /arch:AVX2 -openmp /Zi /Ob0 /Od /RTC1
+--     Linker flags (Release):      /machine:x64  /INCREMENTAL:NO
+--     Linker flags (Debug):        /machine:x64  /debug /INCREMENTAL
+--     ccache:                      NO
+--     Precompiled headers:         NO
+--     Extra dependencies:          cudart_static.lib nppc.lib nppial.lib nppicc.lib nppidei.lib nppif.lib nppig.lib nppim.lib nppist.lib nppisu.lib nppitc.lib npps.lib cublas.lib cudnn.lib cufft.lib -LIBPATH:"C:/Program Files/NVIDIA GPU Computing Toolkit/CUDA/v12.5/lib/x64" -LIBPATH:"C:/Program Files/NVIDIA/CUDNN/v9.2/lib/12.5/x64"
+--     3rdparty dependencies:
+--
+--   OpenCV modules:
+--     To be built:                 alphamat aruco bgsegm bioinspired calib3d ccalib core cudaarithm cudabgsegm cudacodec cudafeatures2d cudafilters cudaimgproc cudalegacy cudaobjdetect cudaoptflow cudastereo cudawarping cudev datasets dnn dnn_objdetect dnn_superres dpm face features2d flann fuzzy gapi hfs highgui img_hash imgcodecs imgproc intensity_transform line_descriptor mcc ml objdetect optflow phase_unwrapping photo plot quality rapid reg rgbd saliency shape signal stereo stitching structured_light superres surface_matching text tracking ts video videoio videostab wechat_qrcode world xfeatures2d ximgproc xobjdetect xphoto
+--     Disabled:                    -
+--     Disabled by dependency:      -
+--     Unavailable:                 cannops cvv freetype hdf java julia matlab ovis python2 python3 sfm viz
+--     Applications:                tests perf_tests apps
+--     Documentation:               NO
+--     Non-free algorithms:         YES
+--
+--   Windows RT support:            NO
+--
+--   GUI:
+--     Win32 UI:                    YES
+--     GTK+:                        NO
+--     OpenGL support:              YES (opengl32 glu32)
+--     VTK support:                 NO
+--
+--   Media I/O:
+--     ZLib:                        build (ver 1.3.1)
+--     JPEG:                        build-libjpeg-turbo (ver 3.0.3-70)
+--       SIMD Support Request:      YES
+--       SIMD Support:              NO
+--     WEBP:                        build (ver encoder: 0x020f)
+--     PNG:                         build (ver 1.6.43)
+--       SIMD Support Request:      YES
+--       SIMD Support:              YES (Intel SSE)
+--     TIFF:                        build (ver 42 - 4.6.0)
+--     JPEG 2000:                   build (ver 2.5.0)
+--     OpenEXR:                     build (ver 2.3.0)
+--     HDR:                         YES
+--     SUNRASTER:                   YES
+--     PXM:                         YES
+--     PFM:                         YES
+--
+--   Video I/O:
+--     DC1394:                      NO
+--     FFMPEG:                      YES (prebuilt binaries)
+--       avcodec:                   YES (58.134.100)
+--       avformat:                  YES (58.76.100)
+--       avutil:                    YES (56.70.100)
+--       swscale:                   YES (5.9.100)
+--       avresample:                YES (4.0.0)
+--     GStreamer:                   YES (1.24.5)
+--     DirectShow:                  YES
+--     Media Foundation:            YES
+--       DXVA:                      YES
+--     Intel Media SDK:             NO
+--
+--   Parallel framework:            OpenMP
+--
+--   Trace:                         YES (with Intel ITT)
+--
+--   Other third-party libraries:
+--     Intel IPP:                   2021.12.0 [2021.12.0]
+--            at:                   C:/src/OpenCvBuild/Debug/3rdparty/ippicv/ippicv_win/icv
+--     Intel IPP IW:                sources (2021.12.0)
+--               at:                C:/src/OpenCvBuild/Debug/3rdparty/ippicv/ippicv_win/iw
+--     Lapack:                      YES (C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_intel_lp64.lib C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_sequential.lib C:/Program Files (x86)/Intel/oneAPI/mkl/2024.2/lib/mkl_core.lib)
+--     Eigen:                       YES (ver 3.4.90)
+--     Custom HAL:                  NO
+--     Protobuf:                    build (3.19.1)
+--     Flatbuffers:                 builtin/3rdparty (23.5.9)
+--
+--   NVIDIA CUDA:                   YES (ver 12.5, CUFFT CUBLAS FAST_MATH)
+--     NVIDIA GPU arch:             86
+--     NVIDIA PTX archs:
+--
+--   cuDNN:                         YES (ver 9.2.1)
+--
+--   OpenCL:                        YES (NVD3D11)
+--     Include path:                C:/src/opencv/3rdparty/include/opencl/1.2
+--     Link libraries:              Dynamic load
+--
+--   Python (for build):            NO
+--
+--   Java:
+--     ant:                         NO
+--     Java:                        NO
+--     JNI:                         NO
+--     Java wrappers:               NO
+--     Java tests:                  NO
+--
+--   Install to:                    C:/src/OpenCvBuild/Debug/install
+-- -----------------------------------------------------------------
+--
+-- Configuring done (32.7s)
+-- Generating done (5.2s)
+-- Build files have been written to: C:/src/OpenCvBuild/Debug
