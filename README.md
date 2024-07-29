@@ -1,6 +1,13 @@
 Build OpenCV World:
 ===================
-Perform CMake configured high speed build of OpenCV_World DLL with performance and contrib options on Windows platform:
+Perform CMake configured high speed build of OpenCV_World DLL with performance and contrib options on Windows platform.
+
+Example system configuration:
+
+	OS: Windows 11
+	Source Directory: c:\src
+	CPU: Intel i9 12900K
+	GPU: nVidiaa 3090
 
 Install Prerequisites:
 ======================
