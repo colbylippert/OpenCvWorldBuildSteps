@@ -3,7 +3,9 @@ Build OpenCV World:
 Perform CMake configured high speed build of OpenCV_World DLL with performance and contrib options on Windows platform.
 
 System configuration:
-=============================
+=====================
+
+Example given for the following configuration:
 
 	OS: Windows 11
 	Source Directory: c:\src
