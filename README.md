@@ -13,7 +13,7 @@ System configuration:
 Build configuration:
 ====================
 ```
-General configuration for OpenCV 4.10.0-dev =====================================
+General configuration for OpenCV 4.10.0-dev
 
   CPU/HW features:
     Baseline:                    SSE SSE2 SSE3 SSSE3 SSE4_1 POPCNT SSE4_2 FP16 FMA3 AVX AVX2
