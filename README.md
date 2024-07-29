@@ -7,7 +7,7 @@ Example system configuration:
 	OS: Windows 11
 	Source Directory: c:\src
 	CPU: Intel i9 12900K
-	GPU: nVidiaa 3090
+	GPU: nVidiaa RTX 3090
 
 Install Prerequisites:
 ======================
