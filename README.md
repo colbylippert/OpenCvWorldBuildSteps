@@ -1,3 +1,7 @@
+Build OpenCV World:
+===================
+Perform CMake configured high speed build of OpenCV_World DLL with performance and contrib options on Windodws platform:
+
 Install Prerequisites:
 ======================
 
