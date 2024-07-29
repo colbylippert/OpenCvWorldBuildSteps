@@ -72,6 +72,14 @@ GStreamer - Multimedia Framework Library
 	- Install MSVC Development Installer
 		. Select Complete install option
 
+	- Add to System Path:
+
+		C:\gstreamer\1.0\msvc_x86_64\bin
+
+	- Reopen command shell and execute the following (Possible long startup delay on first invocation during plugin scan)
+
+		gst-launch-1.0 videotestsrc ! videoconvert ! autovideosink
+  
 Get CPU and GPU Architecture Configurations:
 ============================================
 
