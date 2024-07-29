@@ -90,7 +90,7 @@ nVidia Computer Capability Tables:
 
 Processor Instructions:
 
-	- Query an LLM for OpenCV CMake CPU_BASELINE and CPU_DISPATCH supported for the target processor model
+	- Query a LLM for OpenCV CMake CPU_BASELINE and CPU_DISPATCH supported for the target processor model
 	- set CPU_BASELINE below to supported instruction sets
 	- set CPU_DISPATCH below to supported instruction sets
 
