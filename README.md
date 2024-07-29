@@ -28,7 +28,6 @@ OpenCv - Computer Vision Library
 ```
 
 OpenCv Contrib - Computer Vision Contrib Modules Library 
-git clone https://github.com/opencv/opencv_contrib.git
 
 ```
 - cd \src
