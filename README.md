@@ -12,7 +12,7 @@ System configuration:
 
 Build configuration:
 ====================
-
+...
 General configuration for OpenCV 4.10.0-dev =====================================
 
   CPU/HW features:
@@ -108,8 +108,7 @@ General configuration for OpenCV 4.10.0-dev ====================================
     JNI:                         NO
     Java wrappers:               NO
     Java tests:                  NO
-
-
+...
 
 Install Prerequisites:
 ======================
