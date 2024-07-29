@@ -12,7 +12,7 @@ Example given for the following configuration:
 	CPU: Intel i9 12900K
 	GPU: nVidiaa RTX 3090
 
-Build configuration:
+CMake configuration:
 ====================
 ```
 General configuration for OpenCV 4.10.0-dev
