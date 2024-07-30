@@ -11,6 +11,7 @@ Example given for the following configuration:
 	Source Directory: c:\src
 	CPU: Intel i9 12900K
 	GPU: nVidiaa RTX 3090
+ 	Visual Studio 2022 Community
 
 CMake configuration:
 ====================
