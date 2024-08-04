@@ -15,7 +15,7 @@ Example given for the following configuration:
 
   	CUDA v12.5
    	cuDNN v9.3.0
-    	OpenCV 4.10.0
+   	OpenCV v4.10.0
      
 CMake configuration:
 ====================
