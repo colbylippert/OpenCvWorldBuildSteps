@@ -13,6 +13,10 @@ Example given for the following configuration:
 	GPU: nVidiaa RTX 3090
  	Visual Studio 2022 Community
 
+  	CUDA v12.5
+   	cuDNN v9.3.0
+    	OpenCV 4.10.0
+
 CMake configuration:
 ====================
 ```
