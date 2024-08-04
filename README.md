@@ -14,7 +14,7 @@ Example given for the following configuration:
  	Visual Studio 2022 Community
 
   	CUDA v12.5
-   	cuDNN v9.3.0
+   	cuDNN v9.2.1
    	OpenCV v4.10.0
      
 CMake configuration:
@@ -163,7 +163,7 @@ nVidia CUDA - nVidia CUDA Library
 cuDNN - nVidia Deep Neural Network Library
 [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 
-	- Download version 9.3.0
+	- Download version 9.2.1
 	- Default install
 
 Intel Math Kernel Library - High Performance Math Library
