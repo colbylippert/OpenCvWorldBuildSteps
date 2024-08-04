@@ -150,12 +150,12 @@ nVidia Windows Driver - GeForce Game Ready Driver
 
 	- Default install
 
-nVidia CUDA - nVidia CUDA Library
+nVidia CUDA 12.5 - nVidia CUDA Library
 [https://developer.nvidia.com/cuda-downloads](https://developer.nvidia.com/cuda-downloads)
 
 	- Default install
 
-cuDNN - nVidia Deep Neural Network Library
+cuDNN 9.3.0 - nVidia Deep Neural Network Library
 [https://developer.nvidia.com/cudnn](https://developer.nvidia.com/cudnn)
 
 	- Default install
